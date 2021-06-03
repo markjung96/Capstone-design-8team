@@ -1,0 +1,16 @@
+/*웹캠 스타일*/
+#container {
+    display: inline-block;
+    margin: 0px;
+    width: 521px;
+    height: 395px;
+    border: 10px #333 solid;
+}
+#videoElement {
+    width: 500px;
+    height: 375px;
+    background-color: #666;
+}
+#startButton, #stopButton, #resetButton {
+	margin: 10px;
+}
