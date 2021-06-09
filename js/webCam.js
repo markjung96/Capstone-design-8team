@@ -8,6 +8,9 @@ var hour;
 var min;
 var sec;
 
+function showPopup(){
+  window.open("video.html","a","width=400, height=300, left=100, top=50");
+}
 
 
 function strBtnEvent(event){ 
@@ -23,8 +26,7 @@ function strBtnEvent(event){
   if (!stTime) {
     stTime = Date.now() // 처음 시작할 때
 } else {
-    stTime += (Date.now() - endTime) // 재시작할 때
-}
+  stTime += (Date.now() - endTime) // 재시작할 때
   timerStart = setInterval(function () {
       var nowTime = new Date(Date.now() - stTime);
       hour = addZero(nowTime.getHours() - 9);
@@ -33,7 +35,11 @@ function strBtnEvent(event){
       document.getElementById('postTestHour').innerText = hour;
       document.getElementById('postTestMin').innerText = min;
       document.getElementById('postTestSec').innerText = sec;
-  }, 1)
+  }, 1)}
+
+  if(min == 10){
+
+  }
 }
 
 function stpBtnEvent(event){

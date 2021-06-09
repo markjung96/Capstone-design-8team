@@ -2,15 +2,43 @@
 #container {
     display: inline-block;
     margin: 0px;
-    width: 521px;
-    height: 395px;
-    border: 10px #333 solid;
 }
 #videoElement {
     width: 500px;
     height: 375px;
     background-color: #666;
+    float: left;
 }
-#startButton, #stopButton, #resetButton {
+#startButton, #stopButton, #popupButton {
 	margin: 10px;
+}
+@media (max-width: 768px) {
+    #videoElement {
+        width: 500px;
+        height: 375px;
+        background-color: #666;
+        margin: 10px 10px 10px 30px;
+    }
+
+    #startButton, #stopButton, #popupButton {
+        margin: 10px auto;
+        width: 80%;
+    }
+    
+    #timer {
+        display: inline-block;
+        margin: 5px auto;
+        text-align: center;
+    }
+}
+#videoContainer {
+    display: inline-block;
+    margin: 0px auto;
+    border: 10px solid black;
+}
+
+#timer {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
 }

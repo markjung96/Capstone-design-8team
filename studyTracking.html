@@ -73,34 +73,34 @@
 									</p>
 									<div class="row gtr-50">
 										<div class="col-4">
-											<a href="#" class="image fit"><img src="images/pic10.jpg" alt="" /></a>
+											<a href="#" class="image fit"><img src="images/facialRecog.jpeg" alt="" /></a>
 										</div>
 										<div class="col-8">
-											<h4>Facial recognize Algorithm</h4>
+											<h4>Facial recognition Algorithm</h4>
 											<p>
 												안면 인식을 통한 사용자의 수면 여부
 											</p>
 										</div>
 										<div class="col-4">
-											<a href="#" class="image fit"><img src="images/pic11.jpg" alt="" /></a>
+											<a href="#" class="image fit"><img src="images/phoneRecog.png" alt="" /></a>
 										</div>
 										<div class="col-8">
-											<h4>Object recognize Algorithm</h4>
+											<h4>Object recognition Algorithm</h4>
 											<p>
 												사물 인식을 통한 핸드폰 및 기타 사물 사용 시간 분석
 											</p>
 										</div>
 										<div class="col-4">
-											<a href="#" class="image fit"><img src="images/pic12.jpg" alt="" /></a>
+											<a href="#" class="image fit"><img src="images/poseRecog.png" alt="" /></a>
 										</div>
 										<div class="col-8">
-											<h4>Motion recognize Algorithm</h4>
+											<h4>Motion recognition Algorithm</h4>
 											<p>
 												모션 인식을 통한 사용자 학습 여부 판단
 											</p>
 										</div>
 										<div class="col-4">
-											<a href="#" class="image fit"><img src="images/pic13.jpg" alt="" /></a>
+											<a href="#" class="image fit"><img src="images/timer.png" alt="" /></a>
 										</div>
 										<div class="col-8">
 											<h4>Stopwatch timer</h4>
@@ -109,7 +109,7 @@
 											</p>
 										</div>
 										<div class="col-4">
-											<a href="#" class="image fit"><img src="images/pic14.jpg" alt="" /></a>
+											<a href="#" class="image fit"><img src="images/webCam.png" alt="" /></a>
 										</div>
 										<div class="col-8">
 											<h4>Web cam</h4>
@@ -132,21 +132,20 @@
 										</p>
 									</header>
                                     <div id="container">
-                                        <video autoplay="true" id="videoElement"></video>
-                                        <button type="button" id="startButton"><a href="121.163.247.17:5000">Start</a></button>
-                                        <button type="button" id="stopButton">Stop</button>
-										<br>
-										<div>
-											<span id="postTestHour">00</span><!-- 분 -->
-											<span>:</span>
-											<span id="postTestMin">00</span><!--초-->
-											<span>:</span>
-											<span id="postTestSec">00</span><!--밀리초-->
+										<div id="videoContainer">
+											<video autoplay="true" id="videoElement"></video>
+											<button type="button" id="startButton"><a href="http://220.79.202.121:5000" target='_blank'>Start</a></button>
+											<button type="button" id="stopButton">Stop</button>
+											<br>
+											<div id="timer">
+												<span id="postTestHour">00</span><!-- 분 -->
+		 										<span id="postTestMin">00</span><!--초-->
+												<span>:</span>
+												<span id="postTestSec">00</span><!--밀리초-->
+											</div>
+											<input type="button" id="popupButton" value="팝업창 호출" onclick="showPopup();"/>
 										</div>
-										<div>
-										<a herf = http://121.163.153.131:5000>Python Code</a>
-										<a herf = https://www.google.com>Python Code</a>
-                                    </div>
+                                     </div>
 									<br>
 									<br>
 									<p>
